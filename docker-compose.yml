@@ -1,0 +1,13 @@
+version: '2.1'
+services:
+  moeinchap-site:
+    image: hub.pazhdadeh.ir/moeinchap-site:latest
+    hostname: localhost
+    restart: unless-stopped
+    container_name: moeinchap-site
+    build: .
+    volumes:
+          - ./environments:/usr/share/nginx/html/assets/environments
+          - ./nginx.conf:/etc/nginx/conf.d/default.conf
+    ports:
+      - 4002:4002

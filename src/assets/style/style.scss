@@ -1,0 +1,246 @@
+@import "variable";
+// global
+@font-face {
+  font-family: "IRANSans";
+  src: url("../../assets/fonts/IRANSans.woff");
+}
+
+html, body {
+  font-family: 'IRANSans';
+  font-size: 13.5px;
+}
+
+/* HTML5 display-getRoleList reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+* {
+  outline: none;
+  font-family: 'IRANSans';
+  font-size: 13.5px;
+  transition: $transitions;
+  direction: rtl;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  color: $body-color;
+  background: $body-bg;
+  direction: ltr !important;
+}
+
+html {
+  position: relative;
+  //min-height: 100%;
+}
+
+a,
+a:active,
+a:focus {
+  text-decoration: none;
+  -webkit-transition-duration: 500ms;
+  -o-transition-duration: 500ms;
+  transition-duration: 500ms;
+}
+
+a:hover {
+  text-decoration: none;
+  -webkit-transition-duration: 500ms;
+  -o-transition-duration: 500ms;
+  transition-duration: 500ms;
+  font-weight: 600;
+  color: $firstColor
+}
+
+.box-shadow {
+  box-shadow: -3px 4px 11px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+}
+
+html body {
+  .font-bold {
+    font-weight: $font-weight-bold;
+  }
+
+  .font-normal {
+    font-weight: $font-weight-normal;
+  }
+
+  .font-light {
+    font-weight: $font-weight-light;
+  }
+
+  .font-medium {
+    font-weight: $font-weight-medium;
+  }
+
+  .font-16 {
+    font-size: 16px;
+  }
+
+  .font-12 {
+    font-size: 12px;
+  }
+
+  .font-14 {
+    font-size: 14px;
+  }
+
+  .font-10 {
+    font-size: 10px;
+  }
+
+  .font-18 {
+    font-size: 18px;
+  }
+
+  .font-20 {
+    font-size: 20px;
+  }
+
+  .font-22 {
+    font-size: 22px;
+  }
+
+  .font-24 {
+    font-size: 24px;
+  }
+
+  .display-5 {
+    font-size: 3rem;
+  }
+
+  .display-6 {
+    font-size: 2.5rem;
+  }
+
+  .display-7 {
+    font-size: 2rem;
+  }
+
+  .bg-cyan {
+    background-color: $cyan;
+  }
+
+  .bg-theme {
+    background-color: $themecolor;
+  }
+
+  .bg-inverse {
+    background-color: $gray-900;
+  }
+
+  .bg-purple {
+    background-color: $purple;
+  }
+
+  .bg-light {
+    background-color: $gray-200;
+  }
+
+  .bg-white {
+    background-color: $white;
+  }
+}
+
+/*******************
+Card
+******************/
+
+.card {
+  margin-bottom: 20px;
+
+  .card-subtitle {
+    font-weight: 400;
+    margin-bottom: 10px;
+    color: $text-muted;
+  }
+
+  .card-title {
+    position: relative;
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+
+  .card-actions {
+    float: right;
+
+    a {
+      padding: 0 5px;
+      cursor: pointer;
+    }
+  }
+
+  .card-header .card-title {
+    margin-bottom: 0;
+  }
+}
+
+.button-box .btn {
+  margin-bottom: 5px;
+  margin-right: 5px;
+}
+
+/* :: 2.0 Spacing CSS */
+.mt-15 {
+  margin-top: 15px;
+}
+
+.mb-15 {
+  margin-bottom: 15px;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+.ml-15 {
+  margin-left: 15px;
+}
+
+.ml-30 {
+  margin-left: 30px;
+}
+
+.mt-30 {
+  margin-top: 30px;
+}
+
+.card {
+  border: none !important;
+}
+
+.bgSecondColor {
+  background-color: $secondColor;
+}
+
+.txtPrimaryColor {
+  color: $firstColor;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  box-shadow: inset 0 0 5px grey;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $firstColor;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #008896;
+}

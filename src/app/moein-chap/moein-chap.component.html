@@ -1,0 +1,292 @@
+<div class="baseSection" [ngStyle]="{backgroundImage:backgroundImage}">
+  <div class="baseContainerOverLay"></div>
+  <header class="topBar">
+    <nav class="d-flex top-navbar navbar-expand-md navbar-light h-100">
+      <ul class="navbar-nav pull-right">
+        <li class="nav-item">
+          <a class="navbar-brand" href="/">
+            <img [ngClass]="{'d-inline-block': innerWidth < 1170}" [routerLink]="['/']"
+                 src="../../assets/img/logo.png" alt="profile" height="75" width="120"/>
+          </a>
+        </li>
+        <!--        <li class="nav-item d-none d-md-flex d-lg-flex d-xl-flex">-->
+        <!--          <a [routerLink]="['/']" class="nav-link"> <i class="fas fa-home fa-lg"></i>صفحه اصلی</a>-->
+        <!--        </li>-->
+        <li class="nav-item d-none d-md-flex d-lg-flex d-xl-flex">
+          <a (click)="scrollTo($event)" id="toProducts" class="nav-link"> <i
+            class="fas fa-store fa-lg"></i>محصولات</a>
+        </li>
+        <li class="nav-item d-none d-md-flex d-lg-flex d-xl-flex">
+          <a id="designDropDown" class="nav-link dropdown-toggle"
+             style="transition: none" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">
+            <i class="fas fa-paint-brush fa-lg"></i>طراحی
+          </a>
+          <div class="dropdown-menu" aria-labelledby="designDropDown" style="transition: none">
+            <a class="dropdown-item text-right" href="#" style="transition: none">ابزار طراحی آنلاین</a>
+            <a class="dropdown-item text-right" href="#" style="transition: none">سفارش طراحی</a>
+          </div>
+        </li>
+        <li class="nav-item d-none d-md-flex d-lg-flex d-xl-flex">
+          <a (click)="scrollTo($event)" id="toCustomers" class="nav-link"> <i
+            class="fas fa-handshake fa-lg"></i>مشتریان ما</a>
+        </li>
+        <li class="nav-item d-none d-md-flex d-lg-flex d-xl-flex">
+          <a (click)="scrollTo($event)" id="toFooter" class="nav-link"><i
+            class="fas fa-phone fa-lg"></i>درباره ما</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav pull-left ml-4">
+        <li class="nav-item">
+          <a class="nav-link p-0"  href="https://panel.moeinchap.com/#/login" target="_self">
+            <i class="fas fa-sign-in-alt fa-lg"></i> ورود
+            <span class="pr-2 pl-2">/</span>
+            <i class="fas fa-user-plus fa-lg"></i> ثبت نام
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <section class="baseContainer">
+    <div class="container-row">
+      <div class="name">
+        <h1 class="text-white"><i class="fas fa-print fa-lg ml-2"></i><span class="fa-lg">چاپ معین </span><br></h1>
+      </div>
+      <div class="name">
+        <h3 class="mt-5 text-white d-block">همه چی از یه چاپ خوب شروع میشه! </h3>
+      </div>
+    </div>
+  </section>
+</div>
+<section class="container mt-5 p-0">
+  <h5 class="section-title">از کجا شروع کنم ؟</h5>
+  <div class="card box-shadow mx-3">
+    <div class="road-map-parent">
+      <div class="road-map-child">
+        <div class="road-map-border">
+          <i class="fas fa-user-plus fa-3x"></i>
+        </div>
+        <h6 class="mt-1">ثبت نام</h6>
+      </div>
+      <div class="road-map-child">
+        <div class="road-map-border">
+          <i class="fas fa-shopping-cart fa-3x"></i>
+        </div>
+        <h6 class="mt-1">ثبت سفارش</h6>
+      </div>
+      <div class="road-map-child">
+        <div class="road-map-border">
+          <i class="fas fa-credit-card fa-3x"></i>
+        </div>
+        <h6 class="mt-1">پرداخت آنلاین</h6>
+      </div>
+      <div class="road-map-child">
+        <div class="road-map-border">
+          <i class="fas fa-clipboard-check fa-3x"></i>
+        </div>
+        <h6 class="mt-1">تایید سفارش</h6>
+      </div>
+      <div class="road-map-child">
+        <div class="road-map-border">
+          <i class="fas fa-truck-loading fa-3x"></i>
+        </div>
+        <h6 class="mt-1">ارسال امور چاپی</h6>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="container mt-5 p-0" id="products">
+  <h5 class="section-title">محصولات چاپ معین</h5>
+  <div class="d-flex flex-wrap mt-3">
+    <div class="container d-flex flex-column align-items-center p-0">
+      <div class="product-parent">
+        <div class="card box-shadow">
+          <div class="card-body">
+            <img class="card-img-top"
+                 src="../../assets/img/set.jpg"
+                 alt="ست اداری"
+                 height="155"
+                 width="155">
+            <div class="card-img-bottom">
+              <h6 class="card-title">ست اداری</h6>
+            </div>
+          </div>
+        </div>
+        <div class="card box-shadow">
+          <div class="card-body">
+            <img class="card-img-top"
+                 src="../../assets/img/sarbarg.jpg"
+                 alt="سربرگ"
+                 height="155"
+                 width="155">
+            <div class="card-img-bottom">
+              <h6 class="card-title">سربرگ</h6>
+            </div>
+          </div>
+        </div>
+        <div class="card box-shadow">
+          <div class="card-body">
+            <img class="card-img-top"
+                 src="../../assets/img/card.jpg"
+                 alt="کارت ویزیت"
+                 height="155"
+                 width="155">
+            <div class="card-img-bottom">
+              <h6 class="card-title">کارت ویزیت</h6>
+            </div>
+          </div>
+        </div>
+        <div class="card box-shadow">
+          <div class="card-body">
+            <img class="card-img-top"
+                 src="../../assets/img/label.png"
+                 alt="لیبل"
+                 height="155"
+                 width="155">
+            <div class="card-img-bottom">
+              <h6 class="card-title">لیبل</h6>
+            </div>
+          </div>
+        </div>
+        <div class="card box-shadow">
+          <div class="card-body">
+            <img class="card-img-top"
+                 src="../../assets/img/cata.png"
+                 alt="کاتالوگ"
+                 height="155"
+                 width="155">
+            <div class="card-img-bottom">
+              <h6 class="card-title">کاتالوگ</h6>
+            </div>
+          </div>
+        </div>
+        <div class="card box-shadow">
+          <div class="card-body">
+            <img class="card-img-top"
+                 src="../../assets/img/sak.jpg"
+                 alt="ساک دستی"
+                 height="155"
+                 width="155">
+            <div class="card-img-bottom">
+              <h6 class="card-title">ساک دستی</h6>
+            </div>
+          </div>
+        </div>
+        <div class="card box-shadow">
+          <div class="card-body">
+            <img class="card-img-top"
+                 src="../../assets/img/mag.jpg"
+                 alt="مجله"
+                 height="155"
+                 width="155">
+            <div class="card-img-bottom">
+              <h6 class="card-title">مجله</h6>
+            </div>
+          </div>
+        </div>
+        <div class="card box-shadow">
+          <div class="card-body">
+            <img class="card-img-top"
+                 src="../../assets/img/bro.jpg"
+                 alt="بروشور"
+                 height="155"
+                 width="155">
+            <div class="card-img-bottom">
+              <h6 class="card-title">بروشور</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="btn">مشاهده تمام محصولات</button>
+    </div>
+  </div>
+</section>
+<section class="container my-5 p-0" id="customers">
+  <h5 class="section-title"> برخی از مشتریان ما</h5>
+  <div class="customer-container">
+    <div class="card tek-card box-shadow">
+      <img class="card-img-top h-50 w-50" src="../../assets/img/zarih.jpg" alt="">
+      <div class="pt-4">
+        <h5 class="card-title">موسسه فرهنگی هنری و انتشاراتی ضریح آفتاب</h5>
+      </div>
+    </div>
+    <div class="card tek-card box-shadow">
+      <img class="card-img-top h-50 w-25" src="../../assets/img/amozesh.png" alt="">
+      <div class="pt-4">
+        <h5 class="card-title">سازمان آموزش و پرورش مشهد</h5>
+      </div>
+    </div>
+    <div class="card tek-card box-shadow">
+      <img class="card-img-top h-50 w-25" src="../../assets/img/alis.svg" alt="">
+      <div class="pt-4">
+        <h5 class="card-title">مجموعه عالیس</h5>
+      </div>
+    </div>
+    <div class="card tek-card box-shadow">
+      <img class="card-img-top h-50 w-25" src="../../assets/img/black.png" alt="">
+      <div class="pt-4">
+        <h5 class="card-title">کافه مربع سیاه</h5>
+      </div>
+    </div>
+    <div class="card tek-card box-shadow">
+      <img class="card-img-top h-50 w-50" src="../../assets/img/noor.png" alt="">
+      <div class="pt-4">
+        <h5 class="card-title">تولید نور مشهد</h5>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="footer" id="footer">
+  <div class="container p-0">
+    <div class="d-flex justify-content-between align-items-start">
+      <div class="d-flex flex-column justify-content-start align-items-start time">
+        <h5 class="text-white m-0">اطلاعات تماس با چاپ معین</h5>
+        <div class="text-white mt-2 pt-1" style="border-top:1px solid #818181">
+          <i class="fas fa-clock fa-pull-right"></i>
+          تایم کاری : شنبه تا چهارشنبه از ساعت 9 تا 17
+          <br>
+          پنجشنبه ها از ساعت 9 تا 13
+        </div>
+        <div class="text-white mt-2">
+          <i class="fas fa-map-marker fa-pull-right"></i>
+          آدرس چاپخانه و دفتر مرکزی: مشهد - خیابان امام خمینی
+          <br>
+          امام خمینی 89 - پلاک 29 - چاپخانه معین
+        </div>
+        <div class="d-flex justify-content-between align-items-center mt-2 text-white w-100">
+          <div class="text-white"><i class="fas fa-phone ml-1"></i>تلفن: 3-38584401</div>
+          <div class="text-white"><i class="fab fa-telegram ml-1"></i>تلگرام: 09154179616</div>
+        </div>
+        <div class="d-flex justify-content-around align-items-center mt-2 text-white w-100" id="contact">
+          <div><i class="fab fa-instagram fa-2x mr-2 ml-2"></i></div>
+          <a href="https://telegram.me/mrjsrj" target="_blank"><i class="fab fa-telegram fa-2x mr-2 ml-2"></i></a>
+        </div>
+      </div>
+      <div class="d-flex flex-column justify-content-start align-items-start products">
+        <h5 class="text-white" style="">محصولات ما</h5>
+        <ul style="list-style-type: none;column-count: 2;border-top:1px solid #818181" class="pt-1 text-right">
+          <li><a class="txtPrimaryColor mr-2" href="./">تراکت</a></li>
+          <li><a class="txtPrimaryColor mr-2" href="./">بروشور</a></li>
+          <li><a class="txtPrimaryColor mr-2" href="./">کارت ویزیت</a></li>
+          <li><a class="txtPrimaryColor mr-2" href="./">کانتر</a></li>
+          <li><a class="txtPrimaryColor mr-2" href="./">کاتالوگ</a></li>
+          <li><a class="txtPrimaryColor mr-2" href="./">پوستر</a></li>
+          <li><a class="txtPrimaryColor mr-2" href="./">ست اداری</a></li>
+          <li><a class="txtPrimaryColor mr-2" href="./">سربرگ</a></li>
+          <li><a class="txtPrimaryColor mr-2" href="./">فاکتور فروش</a></li>
+          <li><a class="txtPrimaryColor mr-2" href="./">لیبل</a></li>
+          <li><a class="txtPrimaryColor mr-2" href="./">ساک دستی</a></li>
+        </ul>
+      </div>
+      <div class="d-flex flex-column justify-content-start align-items-star namad">
+        <img class="w-75" src="../../assets/img/e-namad.png" alt="">
+      </div>
+    </div>
+  </div>
+</div>
+<div class="d-flex justify-content-center align-items-center rights"
+     style="background-color: #555;color: #a4a4a4">
+  کلیه حقوق مادی و معنوی این سامانه، متعلق به چاپخانه معین می باشد
+</div>
+<button class="d-none d-md-flex d-lg-flex d-xl-flex" *ngIf="isShow" (click)="topFunction()" id="scrollTop" title="Go to top">
+  <i class="fas fa-arrow-up fa-2x"></i>
+</button>
